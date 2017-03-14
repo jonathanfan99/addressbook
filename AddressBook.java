@@ -1,3 +1,4 @@
+//edit date 03/14/2017
 import java.io.*;
 import java.util.Scanner;
 
@@ -17,3 +18,8 @@ public class AddressBook {
 	    friends[numfriends] = c;
 	    numFriends++;
     }
+//print infor on all contacts
+	public void printContacts(){
+		for(Contact cc: AddressBook)
+			friends[cc].printContact();
+	}
